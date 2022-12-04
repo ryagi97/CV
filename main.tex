@@ -1,0 +1,281 @@
+% Preamble
+% Compile with XeLateX
+
+\documentclass[11 pt,oneside,a4paper,titlepage]{article}
+\usepackage{preamble}
+\graphicspath{{PIC/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\sidebar{sideBarColor!25}
+\simpleheader{titleBackColor}{Ryan}{Aġius}{Embedded Engineer}{white}
+
+% Start Minipages
+\vspace*{3cm}% start 7.5 cm from the top of the page}
+    \adjustbox{valign=t}{\begin{minipage}{7.3cm} % large 7.4 cm from the top
+    \vspace*{1.2cm} % text starts 1cm under the top of the minipage
+            
+        % Picture
+        \begin{center}
+        \begin{tikzpicture}
+            \node[
+            circle,
+            minimum size=\cvPictureWidth,
+            path picture={
+            \node at (path picture bounding box.center){
+             \includegraphics[width=\cvPictureWidth]{ryan.png}
+             };
+             }]
+            {};
+        \end{tikzpicture}
+        \end{center}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Profile section
+        \ruleline{\textbf{About me}}
+        I am an electronics \& embedded engineer with 3 years of experience working with on a variety of related projects, from small prototypes to larger commercial products. \\
+
+        I enjoy solving problems and learning new skills, especially those related to embedded systems. \\
+        
+        I currently specialise in Embedded Linux Systems for vision and AI applications for educational, industrial and commercial use. On these systems, I have been responsible for creating elements of their BSP, writing and testing kernel drivers, diagnosing hardware, firmware and software issues and packaging and optimising applications for said systems. 
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Contact Section
+        \vspace*{0.6cm} 
+        \ruleline{\textbf{Contact}}
+        \begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
+        \matrix [
+        column 1/.style={anchor=center,contactIcon},
+        column 2/.style={anchor=west,align=left,contactIcon},
+        column sep=5pt,
+        row sep=5pt] (contact) {
+        \node{\faMale};
+         & \node{DOB: +17/09/1997};\\
+        \node{\faEnvelope}; 
+         & \node{\href{mailto:ryan@smartcow.ai}{ryan@smartcow.ai}};\\
+         \node{\faEnvelopeO}; 
+         & \node{\href{mailto:ryagius17@gmail.com}{ryagius17@gmail.com}};\\
+        \node{\faPhone}; 
+         & \node{+356 79006050};\\ 
+        \node{\faMapMarker}; 
+        & \node{Annitchka Mansions Flat 1 \\ 13, Triq F Geneste \\ Birkirkara BKR1682 \\ Malta};\\
+        \node{\faGithub}; 
+        & \node{\href{https://www.linkedin.com/in/ragius/}{ryagi97}};\\
+        \node{\faLinkedinSquare}; 
+        & \node{\href{https://github.com/ryagi97}{ryan-aġius}};\\
+        %\node{\faCar};
+        %& \node{Car Available, Driving License B};\\
+         };
+        \end{tikzpicture} 
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \vspace*{0.6cm} 
+        \ruleline{\textbf{Languages}}
+        \begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
+        \matrix [
+        column 1/.style={anchor=center,contactIcon},
+        column 2/.style={anchor=west,align=left,contactIcon},
+        column sep=5pt,
+        row sep=5pt] (contact) {
+        \node{\flag{England.png}};
+        & \node{English - Native Language};\\
+        \node{\flag{Malta.png}};
+        & \node{Malti - Native Knowledge};\\
+        \node{\flag{France.png}};
+        & \node{Français - Basic Knowledge};\\
+        };
+        \end{tikzpicture} 
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % QR Code
+        %\begin{center}
+        %    \includegraphics[width=3.5cm]{QR_Info.png}
+        %\end{center}
+        
+    \end{minipage}} %
+    \hfill 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% MAIN SECTION %%%%%%%%%%%%%%%%%%%%
+    \adjustbox{valign=t}{\begin{minipage}{11.3cm}
+        \vspace*{1cm}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Work Experience
+        \section*{{\faSuitcase} WORK EXPERIENCE}
+            
+        \MySectionNoPic{SEP 2021 - Today}{AIoT Engineering Manager}{St. Julians, Malta}{SmartCow}{Lead a small team of Embedded Linux and IoT Engineers to quickly develop and test hardware, firmware \& software features related to SmartCow's products. Interact and consult various other teams based on our findings to improve product viability. Create training documents and courses for both internal and external use. Represent the company at various exhibitions and expos in Europe and the Middle East, as well as help produce presentations, blog posts and product videos for marketing purposes and sales pitches.}  
+            
+        \vspace*{0.22cm}
+            
+        \MySectionNoPic{JUN 2021 - SEP 2021}{AIoT Engineer}{St. Julians, Malta}{SmartCow}{Responsible for rapid prototyping and day-zero testing of hardware prototypes and software features around the NVIIDA Jetson platform.}  
+
+        \vspace*{0.22cm}
+            
+        \MySectionNoPic{MAR 2020 - JUN 2021}{Student Engineer}{L-Imrieħel, Malta}{Methode Electronucs Malta Ltd.}{Helped improve the functionality of verios systems and processes in the SMT department, which focuses on automotive PCB assembly. Projects included a backup system for a number of critical Unix, Windows and Linux systems, and optimisation of a laser system for barcode etching on assembled PCBs.}  
+
+        \vspace*{0.22cm}
+            
+        \MySectionNoPic{AUG 2020 - FEB 2021}{Research Student}{Geneva, Switzerland}{CERN}{Worked with the European Organization for Nuclear Research's (CERN) Mechatronics \& Robotics department as part of my Master's Degree. The main project was to implement a vision based anomaly detection system to scan the interior surface of superconducting RF cavities. Duties included sourcing components, PCB design to provide custom functionality and implementing signal processing and machine learning algorithms to identify anomalous areas in the images taken.} 
+
+        \vspace*{0.22cm}
+            
+        \MySectionNoPic{AUG 2020 - FEB 2021}{Research Student}{Burgdorf, Switzerland}{Bern University of Applied Sciences}{Responsible for the creation of improved prototypes of two low-cost, low-power IoT systems with Bluetooth connectivity. Duties include performing simulations and cost studies of the proposed circuits, designing and assembling PCBs and performing a full characterisation on the completed systems.}
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Education
+        \section*{{\faGraduationCap} EDUCATION}
+
+        \MySectionNoPic{2019-2021}{Master of Science in ICT}{L-Imsida, Malta}{University of Malta}{Followed the Master of Science in ICT: Signal Processing and Machine Learning course consisting of one year taught studies and a one year dissertation. Classes followed mainly focused on machine vision, signal processing, IOT devices and machine learning algorithms. \\\textbf{Dissertation:}  Dissertation entitled, Manufacturing Process Anomaly Detection in RF Cavities. \\\textbf{Degree:} summa cum laude}
+            
+        \vspace*{0.22cm}
+
+        \MySectionNoPic{2015-2019}{Bachelor of Engineering (Hons).}{L-Imsida, Malta}{University of Malta}{Followed the Bachelor of Engineering (Hons.) in Electrical \& Electronic Engineering course where I focused mainly on Radio Frequency Engineering, Digital Signal Processing, Analogue \& Digital Electronics and Power Electronics. \\\textbf{Dissertation:} Design of the Radio Front-End of a UHF Phased Array System. \\\textbf{Degree:} summa cum laude}
+            
+    \end{minipage}} %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Second Page
+\newpage
+
+\sidebar{sideBarColor!25}
+\newpageheader{titleBackColor}{Ryan}{Aġius}{Embedded Linux Engineer }{white}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SIDEBAR %%%%%%%%%%%%%%%%%%%
+\adjustbox{valign=t}{%
+\begin{minipage}{7.3cm} 
+\vspace*{0.4cm} % text starts 0.4cm under the top the header
+        
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Skill and Strengths 
+    \ruleline{\textbf{Soft Skills and Strengths}}
+    \vspace*{-0.5cm}
+    \begin{center}
+        \cvtag{Creativity}\cvtag{Curiosity}\cvtag{Flexibility}\cvtag{Autonomy}\cvtag{Adaptability} \cvtag{Eye for Details}\cvtag{Problem Solving}\cvtag{Good Listener}\cvtag{Patience}
+    \end{center}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Professional Skills 
+    \ruleline{\textbf{Professional Skills}}
+    \begin{center}
+        \cvtag{Skill 1}\cvtag{Skill 2}\cvtag{Skill 3}\cvtag{Skill 4}\cvtag{Skill 5}
+    \end{center}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Other Interests
+    \ruleline{\textbf{Other Interests}}
+    \small
+    \begin{multicols}{2}
+        \begin{itemize} 
+            \item  Cycling \flag{cycling.png}
+            \item  Kayaking \flag{kayak.png}
+            \item  Reading \flag{Books.png}
+            \item  DIY \flag{diy.png}
+            \item  Chess \flag{Chess.png}
+            \item  Travels \flag{Travels.png}
+            
+    \end{itemize}
+    \end{multicols}
+
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % QR Code
+        \ruleline{\textbf{Download My CV}}
+        \scriptsize
+        \centering
+        Download my CV via the QR below \aiOverleaf.
+        \begin{center}
+            \quad
+            \qrcode[height=2cm]{
+                https://www.dropbox.com/sh/k5pheguf9jrur8x/AADpyjYJi7V5bhPyJeP3H74ea?dl=0} \\
+            \vspace*{0.5cm}
+        \end{center}
+
+\end{minipage}
+}%
+\hfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MAIN %%%%%%%%%%%%%%%%%%%%%%%%%
+\adjustbox{valign=t}{%
+\begin{minipage}{11.3cm}
+    \vspace*{0.4cm}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Information Technology Skills
+    \section*{{\faDesktop} INFORMATION TECHNOLOGY SKILLS}
+    
+    \ITCcompetence{Embedded Systems}{
+    \textbf{Embedded Linux}: \textit{Advanced}\\
+    \textbf{Yocto}: \textit{Intermediate}\\
+    \textbf{Buildroot}: \textit{Intermediate}
+    }
+    
+    \vspace*{0.22cm}
+
+    \ITCcompetence{Modeling and Simulation}{
+    \textbf{Altium} : \textit{Advanced}  \\
+    \textbf{QUCS} : \textit{Advanced}  \\
+    \textbf{LTSpice}: \textit{Intermediate}
+    }
+
+    \vspace*{0.22cm}
+    
+    \ITCcompetence{Version Control}{
+    \textbf{git, github} : \textit{Intermediate}  \\
+    \textbf{SVN} : \textit{Basic}  
+    }
+    
+    \vspace*{0.22cm}
+
+    \ITCcompetence{Devops}{
+    \textbf{GitHub Actions} : \textit{Intermediate}  \\
+    \textbf{Docker} : \textit{Intermediate} \\
+    \textbf{Ansible} : \textit{Basic} 
+    }
+    
+    \vspace*{0.22cm}
+
+    \ITCcompetence{Office Automation}{
+    \textbf{MS Office Suite (Excel, Word, PowerPoint)}: \textit{Advanced}\\
+    \textbf{\LaTeX}: \textit{Advanced}
+    }
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Programming Languages
+    \section*{{\faCode} PROGRAMMING LANGUAGES}
+    \vspace*{-0.5cm}
+    \begin{multicols}{2}    
+    \begin{itemize}
+    \footnotesize
+        \item \textbf{C}: Advanced
+        \item \textbf{Python}: Advanced
+        \item \textbf{sh, bash}: Advanced
+        \item \textbf{C++}: Basic
+        \item \textbf{Rust}: Basic
+        \item[\vspace{\fill}]
+    \end{itemize}
+    \end{multicols}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Certificates
+    \section*{{\faCertificate} CERTIFICATES}
+    
+    \adjustbox{valign=t}{\begin{minipage}{2cm}
+    \begin{center}
+        \includegraphics[width=2cm]{nvidia.png}
+    \end{center}
+    \end{minipage}}
+    \hfill \vline \hfill
+    \adjustbox{valign=t}{\begin{minipage}{9cm}
+        \begin{itemize}
+            \scriptsize 
+            \item Fundamentals of Accelerated Data Science (\textit{NVIDIA DLI, 2021})
+            \item Fundamentals of Accelerated Computing with CUDA Python (\textit{NVIDIA DLI, 2021})
+            \item Fundamentals of Accelerated Data Science with RAPIDS (\textit{NVIDIA DLI, 2021})
+            \item Modeling Time Series Data with Recurrent Neural Networks in Keras (\textit{NVIDIA DLI, 2021})
+            \item Getting Started with AI on Jetson Nano (\textit{NVIDIA DLI, 2021})
+            \item Building Video AI Applications at the Edge on Jetson Nano (\textit{NVIDIA DLI, 2021})
+            \item Getting Started with DeepStream for Video Analytics on Jetson Nano (\textit{NVIDIA DLI, 2021})
+        \end{itemize}
+    \end{minipage}}
+    
+\end{minipage}}
+
+
+\end{document}
