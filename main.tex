@@ -1,7 +1,7 @@
 % Preamble
 % Compile with XeLateX
 
-\documentclass[11 pt,oneside,a4paper,titlepage]{article}
+\documentclass[11 pt,oneside,a4paper,titlepage,hidelinks]{article}
 \usepackage{preamble}
 \graphicspath{{assets/images/}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -33,11 +33,11 @@
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % Profile section
         \ruleline{\textbf{About me}}
-        I am an electronics \& embedded engineer with 4 years of experience working with on a variety of related projects, from small prototypes to larger commercial products. \\
+        I am an electronics \& embedded engineer with 4 years of professional experience working with on a variety projects, from small prototypes and proof of concepts, to larger commercial products. \\
 
         I enjoy solving problems and learning new skills, especially those related to embedded systems. \\
         
-        I currently specialise in Embedded Linux Systems for vision and AI applications for educational, industrial and commercial use. On these systems, I have been responsible for creating elements of their BSP, writing and testing kernel drivers, diagnosing hardware, firmware and software issues and packaging and optimising applications for said systems. 
+        I currently specialise in developing Embedded Linux Systems for vision and AI applications for educational, industrial and commercial use. On these systems, I have been responsible for creating elements of their BSP, writing and testing kernel drivers, diagnosing hardware, firmware and software issues, and packaging and optimising applications for said systems. 
         
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % Contact Section
@@ -50,15 +50,13 @@
         column sep=5pt,
         row sep=5pt] (contact) {
         \node{\faMale};
-         & \node{DOB: +17/09/1997};\\
+         & \node{DOB: 17/09/1997};\\
         \node{\faEnvelope}; 
-         & \node{\href{mailto:ryan@smartcow.ai}{ryan@smartcow.ai}};\\
-         \node{\faEnvelopeO}; 
          & \node{\href{mailto:ryagius17@gmail.com}{ryagius17@gmail.com}};\\
         \node{\faPhone}; 
          & \node{+356 79006050};\\ 
         \node{\faMapMarker}; 
-        & \node{Annitchka Mansions Flat 1 \\ 13, Triq F Geneste \\ Birkirkara BKR1682 \\ Malta};\\
+        & \node{154, Dawn \\ Triq il-Kbira \\ Mellieha MLH2315 \\ Malta};\\
         \node{\faGithub}; 
         & \node{\href{https://www.linkedin.com/in/ragius/}{ryagi97}};\\
         \node{\faLinkedinSquare}; 
@@ -80,7 +78,7 @@
         \node{\flag{England.png}};
         & \node{English - Native Language};\\
         \node{\flag{Malta.png}};
-        & \node{Malti - Native Knowledge};\\
+        & \node{Malti - Native Language};\\
         \node{\flag{France.png}};
         & \node{Français - Basic Knowledge};\\
         };
@@ -102,19 +100,19 @@
         % Work Experience
         \section*{{\faSuitcase} WORK EXPERIENCE}
             
-        \MySectionNoPic{SEP 2021 - Today}{AIoT Engineering Manager}{St. Julians, Malta}{SmartCow}{Lead a small team of Embedded Linux and IoT Engineers to quickly develop and test hardware, firmware \& software features related to SmartCow's products. Interact and consult various other teams based on our findings to improve product viability. Create training documents and courses for both internal and external use. Represent the company at various exhibitions and expos in Europe and the Middle East, as well as help produce presentations, blog posts and product videos for marketing purposes and sales pitches.}  
+        \MySectionNoPic{SEP 2021 - Today}{AIoT Engineering Manager}{St. Julians, Malta}{SmartCow}{Lead a small team of Embedded Linux and IoT Engineers to quickly develop and test hardware, firmware \& software features related to SmartCow's products. Interact and consult with various other teams to improve product viability. Create training documents and courses for both internal and external use. Represent the company at various exhibitions and expos in Europe and the Middle East, as well as help produce presentations, blog posts and product videos for marketing purposes and sales pitches.}  
             
         \vspace*{0.22cm}
             
-        \MySectionNoPic{JUN 2021 - SEP 2021}{AIoT Engineer}{St. Julians, Malta}{SmartCow}{Responsible for rapid prototyping and day-zero testing of hardware prototypes and software features around the NVIIDA Jetson platform.}  
+        \MySectionNoPic{JUN 2021 - SEP 2021}{AIoT Engineer}{St. Julians, Malta}{SmartCow}{Responsible for rapid prototyping and testing of hardware prototypes and software features related to the NVIDIA Jetson platform.}  
 
         \vspace*{0.22cm}
             
-        \MySectionNoPic{MAR 2020 - JUN 2021}{Student Engineer}{L-Imrieħel, Malta}{Methode Electronucs Malta Ltd.}{Helped improve the functionality of verios systems and processes in the SMT department, which focuses on automotive PCB assembly. Projects included a backup system for a number of critical Unix, Windows and Linux systems, and optimisation of a laser system for barcode etching on assembled PCBs.}  
+        \MySectionNoPic{MAR 2020 - JUN 2021}{Student Engineer}{L-Imrieħel, Malta}{Methode Electronics Malta Ltd.}{Helped improve the functionality of various systems and processes in the SMT department, which focuses on automotive PCB assembly. Projects included a backup system for a number of critical Unix, Windows and Linux systems, and optimisation of a laser system for barcode etching on assembled PCBs.}  
 
         \vspace*{0.22cm}
             
-        \MySectionNoPic{AUG 2020 - FEB 2021}{Research Student}{Geneva, Switzerland}{CERN}{Worked with the European Organization for Nuclear Research's (CERN) Mechatronics \& Robotics department as part of my Master's Degree. The main project was to implement a vision based anomaly detection system to scan the interior surface of superconducting RF cavities. Duties included sourcing components, PCB design to provide custom functionality and implementing signal processing and machine learning algorithms to identify anomalous areas in the images taken.} 
+        \MySectionNoPic{AUG 2020 - FEB 2021}{Research Student}{Geneva, Switzerland}{CERN}{Worked with the European Organization for Nuclear Research's (CERN) Mechatronics \& Robotics department as part of my Master's Degree. The main project was to implement a vision based anomaly detection system to scan the interior surface of superconducting RF cavities. Duties included sourcing components, PCB design to provide custom functionality and implementing signal processing and machine learning algorithms to identify anomalous areas in the captured images.} 
 
         \vspace*{0.22cm}
             
@@ -124,11 +122,11 @@
         % Education
         \section*{{\faGraduationCap} EDUCATION}
 
-        \MySectionNoPic{2019-2021}{Master of Science in ICT}{L-Imsida, Malta}{University of Malta}{Followed the Master of Science in ICT: Signal Processing and Machine Learning course consisting of one year taught studies and a one year dissertation. Classes followed mainly focused on machine vision, signal processing, IOT devices and machine learning algorithms. \\\textbf{Dissertation:}  Dissertation entitled, Manufacturing Process Anomaly Detection in RF Cavities. \\\textbf{Degree:} summa cum laude}
+        \MySectionNoPic{2019-2021}{Master of Science in ICT}{L-Imsida, Malta}{University of Malta}{Followed the Master of Science in ICT: Signal Processing and Machine Learning course consisting of one year taught studies and a one year dissertation. Classes followed mainly focused on machine vision, signal processing, IOT devices and machine learning algorithms. \\\textbf{Dissertation:}  Dissertation entitled, Manufacturing Process Anomaly Detection in RF Cavities. \\\textbf{Degree Awarded:} summa cum laude}
             
         \vspace*{0.22cm}
 
-        \MySectionNoPic{2015-2019}{Bachelor of Engineering (Hons).}{L-Imsida, Malta}{University of Malta}{Followed the Bachelor of Engineering (Hons.) in Electrical \& Electronic Engineering course where I focused mainly on Radio Frequency Engineering, Digital Signal Processing, Analogue \& Digital Electronics and Power Electronics. \\\textbf{Dissertation:} Design of the Radio Front-End of a UHF Phased Array System. \\\textbf{Degree:} summa cum laude}
+        \MySectionNoPic{2015-2019}{Bachelor of Engineering (Hons).}{L-Imsida, Malta}{University of Malta}{Followed the Bachelor of Engineering (Hons.) in Electrical \& Electronic Engineering course where I focused mainly on Radio Frequency Engineering, Digital Signal Processing, Analogue \& Digital Electronics and Power Electronics. \\\textbf{Dissertation:} Design of the Radio Front-End of a UHF Phased Array System. \\\textbf{Degree Awarded:} summa cum laude}
             
     \end{minipage}} %
 
@@ -175,7 +173,7 @@
         \ruleline{\textbf{Download My CV}}
         \scriptsize
         \centering
-        View the source and download this CV on \faGithub via the QR below.
+        View the source and download this CV on \faGithub \\ via the QR code below.
         \begin{center}
             \quad
             \qrcode[height=4cm]{
@@ -212,7 +210,7 @@
     \vspace*{0.22cm}
     
     \ITCcompetence{Version Control}{
-    \textbf{git, github} : \textit{Intermediate}  \\
+    \textbf{git, github} : \textit{Advanced}  \\
     \textbf{SVN} : \textit{Basic}  
     }
     
@@ -228,7 +226,7 @@
 
     \ITCcompetence{Office Automation}{
     \textbf{MS Office Suite (Excel, Word, PowerPoint)}: \textit{Advanced}\\
-    \textbf{\LaTeX}: \textit{Advanced}
+    \textbf{\LaTeX}: \textit{Intermediate}
     }
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
